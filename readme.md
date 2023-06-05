@@ -61,7 +61,7 @@ class AbstractEmbedOfficeFile:
 可以使用其它开发语言，但使用其它语言有如下要求
 
 1. 提供完整源代码
-2. 该语言支持静态编译，并且你需要提供一键打包脚本，允许该项目可由他人维护
+2. 该语言支持静态编译，打包后不能超过 **30 MB** 并且你需要提供一键打包脚本，允许该项目可由他人维护
 3. 支持如下调用方式 
    1. 在这种用法下，不生成任何临时文件  --list-embed-files /path/to/office
    2. 仅在指定路径生成文件     --extract-embed-files /path/to/offfice  embed_filename --output-path /path/to/extract
