@@ -1,17 +1,26 @@
-编写一个 python 程序，可以从以下集中 office 文件中提取内嵌文件
+编写一个 python 程序，可以从以下几中 office 文件中提取内嵌文件
 
-- dot 
-- dotm 
-- xlt 
-- xlsm 
-- pps 
-- pptm 
-- wps 
-- wpt 
-- dps 
-- dpt 
-- et 
-- ett
+1. doc
+1. dot 
+1. dotm 
+1. xlt 
+1. xlsm 
+1. pps 
+1. pptm 
+1. wps 
+1. wpt 
+1. dps 
+1. dpt 
+1. et 
+1. ett
+
+主要内嵌的文件为图片
+- tif
+- jpg
+- jpeg
+- bmp
+- png
+- dib
 
 ## 编码风格简述
 
@@ -43,3 +52,6 @@ class AbstractEmbedOfficeFile:
 ```
 
 [res](./res) 目录中是样本文件，可以用来测试
+
+依赖的第三方库加起来不可以超过 10 MB
+程序运行过程中可允许产生任何临时文件

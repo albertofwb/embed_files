@@ -17,6 +17,8 @@ class AbstractEmbedOfficeFile:
         raise NotImplementedError()
     
 
+# 实现 dot 内嵌文档的解析
 class EmbedOfficeFileDot(AbstractEmbedOfficeFile):
     def list_embed_files(self) -> List[str]:
-        return super().list_embed_files()
+        raise NotImplementedError()
+    
